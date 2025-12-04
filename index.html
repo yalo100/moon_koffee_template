@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon Coffee Marrakech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">Moon Coffee</div>
+    <nav class="main-nav">
+      <a href="#hero">Accueil</a>
+      <a href="#menu">Menu</a>
+      <a href="#localisation">Localisation</a>
+      <a href="#commande">Commander</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero fade-section">
+      <div class="hero-content">
+        <p class="eyebrow">Coffee shop premium</p>
+        <h1>Moon Coffee Marrakech</h1>
+        <p class="subtitle">Coffee. Pastry. Local Vibes.</p>
+        <a class="btn primary" href="#commande">Commander maintenant</a>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <section id="menu" class="section fade-section">
+      <div class="section-header">
+        <p class="eyebrow">Notre sélection</p>
+        <h2>Menu signature</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Cafés</h3>
+          <ul>
+            <li><span>Espresso</span><span>18 DH</span></li>
+            <li><span>Latte</span><span>24 DH</span></li>
+            <li><span>Cappuccino</span><span>26 DH</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Pâtisseries</h3>
+          <ul>
+            <li><span>Croissant beurre</span><span>12 DH</span></li>
+            <li><span>Pain au chocolat</span><span>14 DH</span></li>
+            <li><span>Cheesecake</span><span>28 DH</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Boissons froides</h3>
+          <ul>
+            <li><span>Iced Latte</span><span>28 DH</span></li>
+            <li><span>Mojito</span><span>30 DH</span></li>
+            <li><span>Thé glacé</span><span>22 DH</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="localisation" class="section split fade-section">
+      <div class="section-header">
+        <p class="eyebrow">Nous trouver</p>
+        <h2>Guéliz, Marrakech</h2>
+        <p class="lead">Une adresse chaleureuse au cœur de Guéliz pour déguster nos cafés de spécialité et pâtisseries artisanales.</p>
+        <div class="contact-info">
+          <span>Horaires : 8h00 - 22h00</span>
+          <span>Téléphone : 06 12 34 56 78</span>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <iframe title="Carte Moon Coffee Marrakech" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.4740680606735!2d-8.01724742444371!3d31.6344695410202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee75c3f9d6a1%3A0x1be7ab3c3b1100ad!2sGueliz%2C%20Marrakech%2040000%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1700000000000!5m2!1sfr!2sma" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="commande" class="section fade-section">
+      <div class="section-header">
+        <p class="eyebrow">Commande rapide</p>
+        <h2>Commander sur WhatsApp</h2>
+        <p class="lead">Remplissez vos informations, nous préparons et vous confirmez en un message.</p>
+      </div>
+      <form id="order-form" class="order-form">
+        <div class="form-group">
+          <label for="name">Nom*</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Téléphone*</label>
+          <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required>
+        </div>
+        <div class="form-group">
+          <label for="product">Produit*</label>
+          <select id="product" name="product" required>
+            <option value="">Choisissez un produit</option>
+            <option>Espresso</option>
+            <option>Latte</option>
+            <option>Cappuccino</option>
+            <option>Croissant beurre</option>
+            <option>Pain au chocolat</option>
+            <option>Cheesecake</option>
+            <option>Iced Latte</option>
+            <option>Mojito</option>
+            <option>Thé glacé</option>
+          </select>
+        </div>
+        <div class="form-group inline">
+          <div>
+            <label for="quantity">Quantité*</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+          </div>
+          <div>
+            <label for="comment">Commentaire</label>
+            <input type="text" id="comment" name="comment" placeholder="Sans sucre, lait d'amande...">
+          </div>
+        </div>
+        <button type="submit" class="btn primary">Envoyer la commande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 Moon Coffee Marrakech
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
