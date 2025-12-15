@@ -142,6 +142,7 @@ a {
   margin: 0 auto;
   display: grid;
   gap: 26px;
+  scroll-margin-top: 110px;
 }
 
 .section-header {
@@ -334,5 +335,15 @@ select:focus {
   .section {
     padding: 48px 16px;
     text-align: center;
+    scroll-margin-top: 96px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .menu-card {
+    padding: 18px;
   }
 }
